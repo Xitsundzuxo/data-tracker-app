@@ -95,3 +95,14 @@ function resetData() {
     displayHistory();
   }
     }
+
+// After calculating remaining
+let remaining = totalData - usedSoFar;
+document.getElementById("result").innerText =
+  `Remaining Data: ${remaining.toFixed(2)} GB`;
+
+// Check for low data
+let threshold = totalData * 0.1; // 10% of total
+if (remaining <= threshold) {
+  alert("⚠️ Warning: Your data is below 10%!");
+                }
