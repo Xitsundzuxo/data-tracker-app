@@ -107,5 +107,8 @@ if (remaining <= threshold) {
   alert("⚠️ Warning: Your data is below 10%!");
                 }
 
+// Low data warning
 let thresholdMB = 50 / 1024; // 50MB → GB
-if (remaining <= thresholdMB) { alert(...); }
+if (remaining <= thresholdMB) {
+  alert("⚠️ Warning: Your remaining data is below 50MB!");
+    }
