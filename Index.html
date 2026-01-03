@@ -10,6 +10,7 @@
 
   <h1>📊 Data Tracker</h1>
 
+
   <div class="card">
     <label>Total Data (GB)</label>
     <input type="number" id="totalData" placeholder="e.g. 5">
@@ -20,6 +21,9 @@
     <button onclick="saveUsage()">Save Usage</button>
 
     <p id="result"></p>
+    <button onclick="resetData()" style="margin-top:10px; background:#dc3545;">
+  Start New Data Cycle
+</button>
   </div>
 
   <script src="app.js"></script>
