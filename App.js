@@ -106,3 +106,6 @@ let threshold = totalData * 0.1; // 10% of total
 if (remaining <= threshold) {
   alert("⚠️ Warning: Your data is below 10%!");
                 }
+
+let thresholdMB = 50 / 1024; // 50MB → GB
+if (remaining <= thresholdMB) { alert(...); }
