@@ -18,23 +18,28 @@
     <label>Used Today (MB)</label>
     <input type="number" id="usedToday" placeholder="e.g. 300">
 
-    <button onclick="saveUsage()">Save Usage</button>
-
-    <p id="result"></p>
-    
-    <h3>📅 Daily Usage History</h3>
-<ul id="historyList"></ul>
-    
-    <button onclick="resetData()" style="margin-top:10px; background:#dc3545;">
-  Start New Data Cycle
-</button>
 
     <button onclick="displayHistory()" style="margin-top:10px;">
   📅 View Daily Usage History
 </button>
 
-<ul id="historyList" style="display:none;"></ul>
-    
+   <!-- Save Usage Button -->
+<button onclick="saveUsage()" style="margin-top:10px; background:#007bff; color:white;">
+  Save Usage
+</button>
+
+<!-- Reset Button -->
+<button onclick="resetData()" style="margin-top:10px; background:#dc3545; color:white;">
+  Start New Data Cycle
+</button>
+
+<!-- History Toggle -->
+<button onclick="toggleHistory()" style="margin-top:10px;">
+  📅 View Daily Usage History
+</button>
+
+<!-- History List -->
+<ul id="historyList" style="display:none;"></ul> 
   </div>
 
   <script src="app.js"></script>
