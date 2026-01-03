@@ -19,27 +19,18 @@
     <input type="number" id="usedToday" placeholder="e.g. 300">
 
 
-    <button onclick="displayHistory()" style="margin-top:10px;">
-  📅 View Daily Usage History
-</button>
+    <button onclick="saveUsage()">Save Usage</button>
 
-   <!-- Save Usage Button -->
-<button onclick="saveUsage()" style="margin-top:10px; background:#007bff; color:white;">
-  Save Usage
-</button>
-
-<!-- Reset Button -->
-<button onclick="resetData()" style="margin-top:10px; background:#dc3545; color:white;">
+<button onclick="resetData()" style="background:#dc3545;">
   Start New Data Cycle
 </button>
 
-<!-- History Toggle -->
-<button onclick="toggleHistory()" style="margin-top:10px;">
+<button onclick="toggleHistory()">
   📅 View Daily Usage History
 </button>
 
-<!-- History List -->
-<ul id="historyList" style="display:none;"></ul> 
+<ul id="historyList" style="display:none;"></ul>
+
   </div>
 
   <link rel="manifest" href="manifest.json">
