@@ -18,3 +18,11 @@ function saveUsage() {
   document.getElementById("result").innerText =
     `Remaining Data: ${remaining.toFixed(2)} GB`;
                        }
+
+function resetData() {
+  if (confirm("Start a new data cycle? This will reset used data.")) {
+    localStorage.removeItem("usedSoFar");
+    document.getElementById("result").innerText =
+      "New data cycle started. Enter today’s usage.";
+  }
+}
